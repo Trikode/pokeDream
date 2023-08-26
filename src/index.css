@@ -1,0 +1,36 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Livvic:wght@100;200;300;400;500;600;700;900&display=swap');
+
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  user-select: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: 'Livvic', sans-serif;
+}
+:root {
+  --color-primary: #1c4c7a;
+  --color-primary-light:#286095;
+  --color-variant: #d6d7d5;
+  --color-variant-2: #dcdcdc;
+  --gradient: linear-gradient(
+    180deg,
+    rgba(27, 18, 18, 1) 0%,
+    rgba(53, 57, 53, 1) 97%
+  );
+  --text-color: rgb(23, 22, 22);
+  --text-color-variant: #dcdcdc;
+  --shadows: -5px 7px 13px -1px rgba(0, 0, 0, 0.45);
+  --transition: all 0.4s;
+}

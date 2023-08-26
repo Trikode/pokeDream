@@ -1,0 +1,50 @@
+.atoggle {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    cursor: pointer;
+    z-index: 41;
+  }
+  
+  .atoggle.active span {
+    background-color:#eeeeee;
+  }
+  .atoggle span {
+    position: absolute;
+    width: 25px;
+    height: 2px;
+    left: 1.5rem;
+    background-color: #eeeeee;
+    border-radius: 4px;
+    transition: 0.5s;
+  }
+  
+  .atoggle span:nth-child(1) {
+    transform: translateY(-10px);
+    width: 15px;
+    left: 1.5rem;
+  }
+  
+  .atoggle span:nth-child(2) {
+    transform: translateY(10px);
+    width: 9px;
+    left: 1.5rem;
+  }
+  
+  .atoggle.active span:nth-child(3) {
+    transform: translateX(-60px);
+  }
+  
+  .atoggle.active span:nth-child(1) {
+    width: 30px;
+    transform: translateY(0px) rotate(45deg);
+    /* transition-delay: 0.125s; */
+  }
+  
+  .atoggle.active span:nth-child(2) {
+    width: 30px;
+    transform: translateY(0px) rotate(315deg);
+    transition-delay: 0.125s;
+  }

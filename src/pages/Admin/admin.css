@@ -1,0 +1,468 @@
+:root{
+    --primary-100:#FF00FF;
+    --primary-200:#ff63ff;
+    --primary-300:#ffd6ff;
+    --accent-100:#d8669f;
+    --accent-200:#00999b;
+    --text-100:#FFFFFF;
+    --text-200:#e0e0e0;
+    --bg-100:#1A1A1A;
+    --bg-200:#292929;
+    --bg-300:#404040;
+     } 
+    button{
+      font-size: 1rem;
+    }
+    .adminMain input{
+        cursor: text ;
+    }
+    /*----------Main page-------*/
+    .adminMain{
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    
+    .P-NCards{
+        background:aliceblue;   
+        position: absolute;
+        padding: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width:85%;
+        min-height: 100vh;
+        height: max-content;
+        gap: 3rem;
+        right: 0;
+        
+    }
+    .report,.new,.warehouse{
+        height: 25rem;
+        width: 35rem;
+        background-color: rgba(52, 51, 51, 0.25);
+        border-radius:10px;
+        box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );  
+    }
+    /*------Add Product Form------*/
+    .Aselection-container{
+        display: flex;
+    }
+    .Acolor-container{
+        display: flex;
+        gap: 4px;
+        flex-direction: column;
+    }
+    .Asize-container{
+        display: flex;
+        flex-direction: column;
+        padding: 1.3rem 0 0 0.5rem;
+        gap: 5.5px;
+    }
+    .Asize-container-child{
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+    .AquantityInput{
+        width: 3rem;
+    }
+    /*---------Navbar----------*/
+    .adminNav{
+        display: none;
+    }
+    .a-navbar {
+        position: fixed;
+        background-color: var(--bg-200);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1.5rem 2.5rem;
+        width: 100%;
+        height: 4rem;
+        box-shadow: var(--shadows);
+        border-bottom: 2px solid;
+        border-color: white;
+        z-index: 3;
+    }
+    
+    .a-left {
+    margin-left: 2px;
+    }
+    .a-center img{
+        width: 5rem;
+
+    }
+   
+    
+    /*------Sidebar------*/
+    .sidebar img{
+        margin-left: 2rem;
+        width: 5rem;
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+        height: 100%;
+        width: 15%;
+        background-color: var(--bg-200);
+        color: var(--primary-300);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem 2rem;
+        gap: 1rem;
+        z-index: 0;
+    }
+    .sidebar h4:hover{
+        color: var(--accent-100) !important ;
+    }
+    .top{
+        display: flex;
+        height: 55%;
+        padding-top: 2.5rem;
+        border-bottom: 2px solid;
+        border-color: gray;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .bottom{
+        display: flex;
+        height: 50%;
+        flex-direction: column;
+        gap: 1rem;
+    }
+    h4{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+    }
+    .sidebar h4{
+        color: var(--text-200);
+
+    }
+    
+    .iconLogout,.iconToSite,.iconReport,.iconAdd,.iconwarehouse{
+        font-size: 20px;
+        color: var(--text-200);
+    }
+    .iconLogout:hover,.iconToSite:hover,.iconReport:hover,.iconAdd:hover,.iconwarehouse:hover{
+        color: var(--accent-100);
+    }
+
+    
+    /*--------New Product-------*/
+    .newContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .newpTitle{
+        display: flex;
+        width: 100%;
+        padding-left: 3rem;
+        color: var(--primary-300);
+    }
+    
+    .Aform{
+        position: relative;
+        width: 90%;
+        padding: 1rem;
+        /* padding-right: 4rem; */
+        display: flex;
+        flex-direction: column;
+        height: 80%;
+        color: var(--text-200);
+    }
+    
+    .Aform div{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding:6px;
+    }
+    
+    .Aform label{
+        font-size: 1.3rem;
+        padding: 0.5rem;
+    }
+    .Aform #inputbtn,.loadbtn{
+        border: 1px solid black;
+        margin: 2px;
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--primary-300);
+        border-radius: 4px;
+        text-transform: uppercase;
+    } 
+    .loadbtn:hover{
+        color: var(--accent-100);
+    }
+    #loadname{
+        background-color: transparent;
+        color: var(--primary-300);
+    }
+    #inputbtn{
+        background-color: transparent;
+        width: 100%;
+    }
+    #inputbtn:hover{
+        color: var(--accent-100);
+    }
+
+    .Aform input{
+        position: absolute;
+        right: 5.5%;
+        border: 1px solid black;
+        margin: 2px;
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--primary-300);
+        background-color: transparent;
+        border-radius: 4px;
+        outline: none;
+    }
+    .Aform input:active{
+        background-color: transparent;
+    }
+    
+    .Aform #categoryNew{
+        position: absolute;
+        right: 5.5%;
+        border: 1px solid black;
+        margin: 2px;
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--primary-300);
+        background-color: transparent;
+        border-radius: 4px;
+        text-transform:capitalize;
+        outline: none;
+    } 
+    #categoryNew:hover{
+        color: var(--accent-100);
+    }
+    
+    option{
+        color: var(--bg-100);
+        background-color:var(--primary-300) ;
+    }
+    
+    .Aform img{
+        height: 6rem;
+        /* border: rgb(74, 74, 68) dotted; */
+        padding: 6px;
+    }
+    
+    /*----------Accessi Utente-----------*/
+
+    /* .LogsAndStatistics {
+        position: absolute;
+
+    } */
+
+    /*----------report--------*/
+    .report{
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: auto;
+    }
+    table {
+        border-collapse: collapse;
+        width: 100%;
+        color: var(--text-200);
+    }
+    
+    thead {
+        background-color: transparent;
+    }
+    th,
+    td {
+        padding: 8px;
+        text-align: left;
+        /* border: 1px solid var(--bg-300); */
+    } 
+    th {
+        font-weight: bold;
+    }
+    .reportTable1{
+        height: 76%;
+        overflow-y: auto;
+        
+        
+    }
+    .report-right{
+        height: 24%;
+        width: 100%;
+        background-color: rgba(52, 51, 51, 0.3);
+        color: var(--text-200);
+        top: 0;
+        display: flex;
+        padding: 10px;
+        border-radius: 6px;
+        justify-content: space-between;
+    }
+    .report-right input{
+        border: 1px solid var(--text-200);
+        margin: 2px;
+        padding: 0.1rem ;
+        cursor:text;
+        font-size: 0.9rem;
+        color:var(--text-200) ;
+        border-radius: 4px;
+        background-color: transparent;
+       outline: none;
+    }
+    .shipping{
+        margin: 5px 2rem;
+        padding: 1rem 0;
+        color: var(--text-200);
+        border-bottom:1px solid var(--bg-300);
+    }
+    
+    /*--------warehouse------*/
+    .warehouse{
+        width: 60rem;
+        height: 30rem;   
+        overflow-y: auto ;
+    }
+    
+    .wTableHead th{
+        width: 5%;
+        font-size: 18px;
+        
+    }
+    .wTableHead{
+        position: sticky;
+        top: 0px;
+        background-color: rgba(52, 51, 51, 0.9);
+        /* backdrop-filter: blur(10px); */
+        z-index: 1;
+    }
+    .wTableHead select{
+        right: 5.5%;
+        border: 1px solid black;
+        margin: 2px;
+        padding: 0.2rem 0.5rem;
+        cursor: pointer;
+        font-size: 0.9rem;
+        color: var(--text-200);
+        background-color: transparent;
+        border-radius: 4px;
+        text-transform: capitalize;
+        outline: none;
+    }
+    .wTableHead select:hover{
+        color: var(--accent-100);
+    }
+    
+    .toolTip { 
+        position: relative;
+        border-bottom: 1px dotted var(--text-200) ; 
+    }
+    
+      
+    /* --------Tooltip img ---------*/
+    .toolTipImg {
+        display: none;
+    }
+    .toolTipImgActive {
+        display: block;
+        width:9rem;
+        height: 9rem;
+        background-color: rgba(163, 159, 159,0.1);
+        text-align: center;
+        padding: 5px 0;
+        border-radius: 6px;
+        position: absolute;
+        left: 8rem;
+        bottom: 23rem;
+    
+        
+    }
+    
+    .toolTipImgActive img {
+        height: 8rem;
+      }
+
+
+      /*------MEDIA QUERIES---------*/
+      @media screen and (max-width: 1290px){
+        
+        .toolTipImgActive{
+            display: block;
+            width:9rem;
+            height: 9rem;
+            background-color: rgba(163, 159, 159,0.1);
+            text-align: center;
+            padding: 5px 0;
+            border-radius: 6px;
+            position: static;
+        }
+        
+    }
+    @media screen and (max-width: 1100px){
+        .adminNav{
+            display: block;
+            z-index: 40;
+        }
+        .sidebar{
+            position: absolute;
+            left: 0;
+        }
+        .sidebar.active{
+            z-index: 2;
+            position: fixed;
+            top: 3rem;
+            height: 100%;
+            width: 14rem;
+            background-color: var(--bg-200);
+            color: var(--primary-300);
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            padding: 1rem 2rem;
+            transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+            gap: 1rem;
+        }
+        .sidebar.active img{
+            display: none;
+        }
+        .P-NCards{
+            width: 100%;
+            top:4rem;
+            padding: 1rem;
+        }
+        .toolTip{
+            border: none;
+        }
+    }
+    @media screen and (max-width: 500px){
+        .form div:nth-child(3),#loadname{
+            display: flex;
+            padding: 6px;
+            flex-direction: row;
+            width: 10rem;
+        }
+        .newpTitle{
+            justify-content: center;
+            padding-left: 0;
+        }
+        .report-right{
+            padding: 7px;
+            
+        }
+        .report-right input{
+            width: 6rem;
+        }
+      }

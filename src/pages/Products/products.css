@@ -1,0 +1,223 @@
+.containerProduct {
+    padding-top: 5rem;
+}
+
+/*--------Product card--------*/
+.productCard img {
+    width: 18rem;
+}
+
+.productCard{
+    cursor: pointer;
+}
+
+.priceProduct {
+    margin-top: 0.2rem;
+}
+
+
+.containerColor {
+    display: flex;
+    margin-top: 0.5rem;
+    column-gap: 0.2rem;
+}
+
+.btnColorProduct {
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    border: 3px solid rgba(0, 0, 0, 0.763);
+}
+
+.nameProduct {
+    font-size: 1.2rem;
+}
+
+/* -------Product Sidebar--------- */
+
+.productSidebar {
+    width: 15vw;
+    background-color: white;
+    padding: 1rem;
+}
+
+.divisiorio {
+    height: 1px;
+    width: 100%;
+    background-color: black;
+    margin: 1.5rem 0;
+}
+
+.containerCardProductMenu {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sidebarCard1 {
+    display: block;
+}
+
+.sidebarCard1 p {
+    cursor: pointer;
+}
+
+.sidebarCard1.active {
+    display: none;
+}
+
+
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.checkbox-label {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+.checkedboxSidebar {
+    cursor: pointer;
+}
+
+.checkedboxSidebar[type="checkbox"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000000;
+    border-radius: 4px;
+    outline: none;
+    transition: 0.3s;
+}
+
+.checkedboxSidebar[type="checkbox"]:checked {
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.checkedboxSidebar[type="checkbox"]:checked::before {
+    content: "\2713";
+    display: block;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    color: #ffffff;
+    text-align: center;
+    line-height: 18px;
+}
+
+.sidebarCard4 {
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 1rem;
+    row-gap: 1rem;
+}
+
+.sidebarCard4.active {
+    display: none;
+}
+
+.sideColor {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+.sidebar33 {
+    width: 33%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.sidebar33 p {
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.sidebarPurple {
+    background-color: purple;
+    cursor: pointer;
+}
+
+.sidebarBlack {
+    background-color: black;
+    cursor: pointer;
+}
+
+.sidebarRed {
+    background-color: red;
+    cursor: pointer;
+}
+
+.sidebarOrange {
+    background-color: orangered;
+    cursor: pointer;
+}
+
+.sidebarBlue {
+    background-color: blue;
+    cursor: pointer;
+}
+
+.sidebarWhite {
+    background-color: white;
+    border: 1px solid rgba(0, 0, 0, 0.18);
+    cursor: pointer;
+}
+
+.sidebarBrown {
+    background-color: #825D41;
+    cursor: pointer;
+}
+
+.sidebarGreen {
+    background-color: green;
+    cursor: pointer;
+}
+
+.sidebarYellow {
+    background-color: yellow;
+    cursor: pointer;
+}
+
+.sidebarGrey {
+    background-color: grey;
+    cursor: pointer;
+}
+
+.sidebarPink {
+    background-color: pink;
+    cursor: pointer;
+}
+
+.sidebarMultiColor {
+    background-image: url("../../assets/multi-color.png");
+    background-size: cover;
+    cursor: pointer;
+}
+
+.containerProduct {
+    display: flex;
+}
+
+.container-productCard {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    justify-content: flex-start;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 3rem;
+    column-gap: 2rem;
+}

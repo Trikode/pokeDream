@@ -1,0 +1,256 @@
+.CartContainer h2 {
+  margin-bottom: 0px;
+  margin-top: 25px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 19px;
+  font-size: 1.2rem;
+}
+.CartContainer {
+  margin-bottom: 30px;
+  height: 150%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.CartContainer ul {
+  margin: 0;
+  padding: 0;
+}
+.CartContainer ul li {
+  list-style: none;
+  padding-left: 10px;
+  cursor: pointer;
+}
+.CartContainer ul li:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.CartIhin {
+  font-weight: 400;
+}
+.CartSmall {
+  font-size: 12px;
+  font-size: 0.8rem;
+}
+.CartHalf-input-table {
+  border-collapse: collapse;
+  width: 100%;
+}
+.CartHalf-input-table td:first-of-type {
+  border-right: 10px solid #4488dd;
+  width: 50%;
+}
+.CartWindow {
+  margin-top: 100px;
+  height: 540px;
+  width: 1000px;
+  background: #fff;
+  display: flex;
+  box-shadow: 0px 15px 50px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 30px;
+  z-index: 10;
+  margin-bottom: 1rem;
+}
+.CartOrder-info {
+  height: 100%;
+  width: 50%;
+  padding-left: 25px;
+  padding-right: 25px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  flex-grow: 1; /* Permette al contenitore di espandersi in altezza e occupare lo spazio disponibile */
+  overflow-y: auto; /* Abilita lo scrolling se il contenuto è più grande dello spazio disponibile */
+}
+.CartPrice {
+  bottom: 0px;
+  position: absolute;
+  right: 0px;
+  color: #4488dd;
+}
+.CartOrder-table td:first-of-type {
+  width: 25%;
+}
+.CartOrder-table {
+  position: relative;
+}
+.CartLine {
+  height: 1px;
+  width: 100%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: #ddd;
+}
+.CartOrder-table td:last-of-type {
+  vertical-align: top;
+  padding-left: 25px;
+}
+.CartOrder-info-content {
+  flex-grow: 1; /* Permette al contenitore di espandersi in altezza e occupare lo spazio disponibile */
+  overflow-y: auto; /* Abilita lo scrolling se il contenuto è più grande dello spazio disponibile */
+  table-layout: fixed;
+}
+
+.CartFull-width {
+  width: 100%;
+}
+.CartPay-btn {
+  font-size: 1.2rem;
+  font-weight: bolder;
+  background-color: black;
+  color: white;
+  width: 15rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  cursor: pointer;
+  border: transparent;
+}
+
+.CartPay-btn:hover {
+  background-color: rgba(0, 0, 0, 0.833);
+}
+
+.CartTotal {
+  margin-top: 25px;
+  font-size: 20px;
+  font-size: 1.3rem;
+  bottom: 0px;
+  right: 27px;
+  left: 35px;
+  position: absolute;
+  background-color: white;
+  z-index: 1;
+  border-top: 1px solid black;
+}
+.CartDense {
+  line-height: 1.2em;
+  font-size: 16px;
+  font-size: 1rem;
+}
+.CartInput-field {
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 10px;
+  margin-top: 3px;
+  line-height: 1.5em;
+  font-size: 20px;
+  font-size: 1.3rem;
+  border: none;
+  padding: 5px 10px 5px 10px;
+  color: #fff;
+  box-sizing: border-box;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.CartCredit-info {
+  background: #4488dd;
+  height: 100%;
+  width: 50%;
+  color: #eee;
+  justify-content: center;
+  font-size: 14px;
+  font-size: 0.9rem;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  box-sizing: border-box;
+  padding-left: 25px;
+  padding-right: 25px;
+  border-top-right-radius: 30px;
+  border-bottom-right-radius: 30px;
+  position: relative;
+}
+
+.CartCredit-info-content {
+  margin-top: 25px;
+  flex-flow: column;
+  display: flex;
+  width: 100%;
+}
+.CartFloatRight {
+  float: right;
+  text-align: right;
+}
+.CartFloatLeft {
+  float: left;
+}
+.CartItemsContainer {
+  display: grid;
+  grid-template-columns: repeat(
+    auto-fill,
+    minmax(300px, 1fr)
+  ); /* oppure usa 'flex-direction: column;' per un layout a colonna */
+  gap: 20px; /* Aggiungi uno spazio tra gli elementi, se necessario */
+  margin-bottom: 5rem;
+}
+.add-adress {
+  margin-top: 1rem;
+}
+
+.CartOverlay {
+  background-color: #de1d1d50;
+  z-index: 10;
+}
+.addressForm {
+  height: 70vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 5rem;
+}
+
+.Cart-form-control{
+  width: 15rem;
+}
+
+.containerAddressForm {
+  background-color: #286095;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  row-gap: 1rem;
+  margin-top: 1rem;
+  width: 25vw;
+  border-radius: 25px;
+  padding: 1rem;
+}
+
+/* .form-group {
+  margin: 30px auto;
+  width: 450px;
+} */
+
+.form-control {
+  float: left;
+}
+
+#inputStreet {
+  width: 100%;
+}
+
+#inputCity {
+  width: 50%;
+}
+
+#inputState {
+  width: 15%;
+}
+
+#inputZip {
+  width: 28%;
+}
+
+#inputCounty {
+  width: 45%;
+}
+
+#inputCountry {
+  width: 50%;
+}
